@@ -1,5 +1,11 @@
 # Code challenge digital house
 
+## Demo
+
+### Android
+
+![Product List Screen](https://github.com/AngelTrinidad/digital-house-challenge/blob/main/docs/imgs/android-product-list.png)
+
 ## App dependencies
 
 - React Native(0.71.2)
