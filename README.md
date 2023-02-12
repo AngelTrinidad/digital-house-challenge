@@ -25,7 +25,7 @@
 
 ## How to start
 
-First, you have to set up your environment, you can follow all the steps in theÏ [official React Native doc](https://reactnative.dev/docs/environment-setup) doc to do so. Once your enviromnet is ready:
+First, you have to set up your environment, you can follow all the steps in the [official React Native doc](https://reactnative.dev/docs/environment-setup) to do so. Once your enviromnet is ready:
 
 1. Install dependencies
 
