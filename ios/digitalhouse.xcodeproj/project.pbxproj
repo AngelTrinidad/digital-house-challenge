@@ -13,7 +13,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-digitalhouse-digitalhouseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-digitalhouse-digitalhouseTests.a */; };
+		7AEFA5A3930C4693B3D05CCB /* Avenir-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E93C7BCE0D4E4CE395151843 /* Avenir-Bold.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D5BB0E7572EA42218586F557 /* Avenir-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D7E2B884B403EB4072881 /* Avenir-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +42,11 @@
 		3B4392A12AC88292D35C810B /* Pods-digitalhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalhouse.debug.xcconfig"; path = "Target Support Files/Pods-digitalhouse/Pods-digitalhouse.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-digitalhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalhouse.release.xcconfig"; path = "Target Support Files/Pods-digitalhouse/Pods-digitalhouse.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-digitalhouse-digitalhouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalhouse-digitalhouseTests.debug.xcconfig"; path = "Target Support Files/Pods-digitalhouse-digitalhouseTests/Pods-digitalhouse-digitalhouseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8D7E2B884B403EB4072881 /* Avenir-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Regular.otf"; path = "../src/assets/fonts/Avenir-Regular.otf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-digitalhouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-digitalhouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = digitalhouse/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-digitalhouse-digitalhouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalhouse-digitalhouseTests.release.xcconfig"; path = "Target Support Files/Pods-digitalhouse-digitalhouseTests/Pods-digitalhouse-digitalhouseTests.release.xcconfig"; sourceTree = "<group>"; };
+		E93C7BCE0D4E4CE395151843 /* Avenir-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Avenir-Bold.otf"; path = "../src/assets/fonts/Avenir-Bold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,6 +100,16 @@
 			name = digitalhouse;
 			sourceTree = "<group>";
 		};
+		2785278DD196414B8BC7C445 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E93C7BCE0D4E4CE395151843 /* Avenir-Bold.otf */,
+				5C8D7E2B884B403EB4072881 /* Avenir-Regular.otf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				2785278DD196414B8BC7C445 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +259,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7AEFA5A3930C4693B3D05CCB /* Avenir-Bold.otf in Resources */,
+				D5BB0E7572EA42218586F557 /* Avenir-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
