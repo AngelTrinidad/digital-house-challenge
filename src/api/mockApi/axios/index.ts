@@ -6,8 +6,6 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
-import {MockApiModuleUrl} from '../types';
-
 export const BASE_URL = 'https://6222994f666291106a29f999.mockapi.io/api';
 export const API_VERSION = 'v1';
 
@@ -18,9 +16,12 @@ const axiosInstance = axios.create();
 axiosInstance.defaults.baseURL = `${BASE_URL}/${API_VERSION}`;
 
 // For mock request
-const mockInstance = new MockAdapter(axiosInstance);
+export const setupMockInterceptor = () => {
+  const mockInterceptor = new MockAdapter(axiosInstance);
+  return mockInterceptor;
+};
 
-export const mockApiOnGet = (moduleUrl: MockApiModuleUrl) =>
-  mockInstance.onGet(`${BASE_URL}/${API_VERSION}/${moduleUrl}`);
+export const mockApiOnGet = (interceptor: MockAdapter, url: string) =>
+  interceptor.onGet(`${BASE_URL}/${API_VERSION}/${url}`);
 
 export default axiosInstance;

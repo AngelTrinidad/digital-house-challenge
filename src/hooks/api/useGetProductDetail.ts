@@ -1,8 +1,6 @@
-import {useMemo} from 'react';
-
 import {useQuery} from 'react-query';
 
-import {getProducts} from '~api';
+import {getProduct} from '~api';
 import {Product, Query} from '~interfaces';
 
 interface UseGetProductDetail {
@@ -16,21 +14,12 @@ interface UseGetProductDetail {
 
 export const useGetProductDetail = (id: string): UseGetProductDetail => {
   const {data, isLoading, isError, isSuccess, refetch, isRefetching} = useQuery(
-    Query.GetProducts,
-    () => getProducts(),
+    [Query.GetProduct, id],
+    () => getProduct(id),
   );
 
-  const product = useMemo((): Product | undefined => {
-    if (!data) {
-      return undefined;
-    }
-    const productFiltered = data.find(e => e.id === id);
-
-    return productFiltered ? productFiltered : undefined;
-  }, [data, id]);
-
   return {
-    data: product,
+    data,
     isError,
     isLoading,
     isSuccess,
