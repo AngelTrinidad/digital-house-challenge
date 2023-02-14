@@ -13,6 +13,10 @@ export const DEFAULT_FONT = Platform.select({
     regular: 'Avenir-Regular', // 400
     bold: 'Avenir-Bold', // 800
   },
+  default: {
+    regular: 'Avenir-Regular', // 400
+    bold: 'Avenir-Bold', // 800
+  },
 });
 
 export const DEFAULT_SPACES = {
