@@ -9,7 +9,6 @@ import {
 
 import ProductListScreen from '..';
 
-import {MockApiModuleUrl, mockApiOnGet} from '~api';
 import {QueryClientProvider} from '~config/queryClient';
 import {DEFAULT_TIME_OUT} from '~constants/test';
 import {formatNumber, getCurrentPoints} from '~helpers';
@@ -24,13 +23,6 @@ import {
 describe('<ProductListScreen />', () => {
   let screen: any;
   let productsHook: any;
-
-  beforeAll(() => {
-    mockApiOnGet(MockApiModuleUrl.Products).reply(200, [
-      product,
-      redemptionProduct,
-    ]);
-  });
 
   beforeEach(() => {
     screen = render(<ProductListScreen {...screenNavigationProps} />, {

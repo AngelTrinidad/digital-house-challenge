@@ -9,7 +9,6 @@ import {
 
 import ProductDetailScreen from '..';
 
-import {MockApiModuleUrl, mockApiOnGet} from '~api';
 import {QueryClientProvider} from '~config/queryClient';
 import {DEFAULT_TIME_OUT} from '~constants/test';
 import {formatNumber, getFullDate} from '~helpers';
@@ -25,12 +24,9 @@ describe('<ProductDetailScreen />', () => {
       },
     },
   } as any;
+
   let screen: any;
   let productHook: any;
-
-  beforeAll(() => {
-    mockApiOnGet(MockApiModuleUrl.Products).reply(200, [product]);
-  });
 
   beforeEach(() => {
     screen = render(<ProductDetailScreen {...screenProps} />, {
