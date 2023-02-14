@@ -4,16 +4,16 @@ import {SCREEN_WIDTH} from './device';
 
 import {scaleSpace} from '~helpers';
 
-export const DEFAULT_FONT =
-  Platform.OS === 'ios'
-    ? {
-        regular: 'Metropolis', // 400
-        bold: 'Metropolis Bold', // 800
-      }
-    : {
-        regular: 'Avenir-Regular', // 400
-        bold: 'Avenir-Bold', // 800
-      };
+export const DEFAULT_FONT = Platform.select({
+  ios: {
+    regular: 'Metropolis', // 400
+    bold: 'Metropolis Bold', // 800
+  },
+  android: {
+    regular: 'Avenir-Regular', // 400
+    bold: 'Avenir-Bold', // 800
+  },
+});
 
 export const DEFAULT_SPACES = {
   paddingScreen: scaleSpace(20),
