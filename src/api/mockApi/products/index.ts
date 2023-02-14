@@ -1,6 +1,6 @@
+import axios from '../axios';
 import {MockApiModuleUrl} from '../types';
 
-import axios from '~api/axios';
 import {Product} from '~interfaces';
 
 export const getProducts = async (): Promise<Product[]> => {

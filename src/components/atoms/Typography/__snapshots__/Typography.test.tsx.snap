@@ -6,7 +6,7 @@ exports[`<Typography /> should has the same snapshot 1`] = `
     {
       "color": "black",
       "fontFamily": "Metropolis Bold",
-      "fontSize": 14,
+      "fontSize": 17.2,
       "fontWeight": "800",
     }
   }

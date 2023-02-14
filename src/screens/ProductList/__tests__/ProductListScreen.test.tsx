@@ -6,12 +6,10 @@ import {
   renderHook,
   waitFor,
 } from '@testing-library/react-native';
-import MockAdapter from 'axios-mock-adapter';
 
 import ProductListScreen from '..';
 
-import {MockApiModuleUrl} from '~api';
-import axiosInstance, {API_VERSION, BASE_URL} from '~api/axios';
+import {MockApiModuleUrl, mockApiOnGet} from '~api';
 import {QueryClientProvider} from '~config/queryClient';
 import {DEFAULT_TIME_OUT} from '~constants/test';
 import {formatNumber, getCurrentPoints} from '~helpers';
@@ -25,14 +23,13 @@ import {
 
 describe('<ProductListScreen />', () => {
   let screen: any;
-  let mockInstance: any;
   let productsHook: any;
 
   beforeAll(() => {
-    mockInstance = new MockAdapter(axiosInstance);
-    mockInstance
-      .onGet(`${BASE_URL}/${API_VERSION}/${MockApiModuleUrl.Products}`)
-      .reply(200, [product, redemptionProduct]);
+    mockApiOnGet(MockApiModuleUrl.Products).reply(200, [
+      product,
+      redemptionProduct,
+    ]);
   });
 
   beforeEach(() => {

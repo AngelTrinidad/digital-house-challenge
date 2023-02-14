@@ -36,7 +36,7 @@ exports[`<Button /> should has same snapshot 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 10,
-        "height": 50,
+        "height": 57.14285714285714,
         "justifyContent": "center",
         "width": "100%",
       },
@@ -52,7 +52,7 @@ exports[`<Button /> should has same snapshot 1`] = `
       {
         "color": "white",
         "fontFamily": "Metropolis Bold",
-        "fontSize": 16,
+        "fontSize": 19.65714285714286,
         "fontWeight": "800",
       }
     }

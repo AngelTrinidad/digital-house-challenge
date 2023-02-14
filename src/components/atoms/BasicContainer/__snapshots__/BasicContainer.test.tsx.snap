@@ -10,7 +10,7 @@ exports[`<BasicContainer /> has same snapshot 1`] = `
       undefined,
       [
         {
-          "padding": 20,
+          "padding": 22.857142857142858,
         },
         {
           "backgroundColor": "#F8F8F8",
