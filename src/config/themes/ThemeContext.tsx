@@ -25,6 +25,7 @@ export const ThemeProvider: FC<PropsWithChildren> = ({children}) => {
       case ThemeOption.Basic:
       default:
         newTheme = basicTheme;
+        break;
     }
 
     setTheme(newTheme);
