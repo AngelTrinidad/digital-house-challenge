@@ -7,13 +7,6 @@ import {Settings} from 'luxon';
 // Import Jest Native matchers
 import '@testing-library/jest-native/extend-expect';
 
-import {
-  MockApiModuleUrl,
-  mockApiOnGet,
-  setupMockInterceptor,
-} from '~api/mockApi';
-import {product, redemptionProduct} from '~mocks';
-
 // Silence the warning: Animated: `useNativeDriver` is not supported because the native animated module is missing
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
@@ -50,17 +43,4 @@ jest.mock('react-native-safe-area-context', () => {
     useSafeAreaInsets: jest.fn(() => inset),
     useSafeAreaFrame: jest.fn(() => ({x: 0, y: 0, width: 390, height: 844})),
   };
-});
-
-// Mock requests
-beforeAll(() => {
-  const interceptor = setupMockInterceptor();
-  mockApiOnGet(interceptor, MockApiModuleUrl.Products).reply(200, [
-    product,
-    redemptionProduct,
-  ]);
-  mockApiOnGet(interceptor, `${MockApiModuleUrl.Products}/${product.id}`).reply(
-    200,
-    product,
-  );
 });

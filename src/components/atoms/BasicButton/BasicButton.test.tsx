@@ -1,9 +1,9 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-import {fireEvent, render} from '@testing-library/react-native';
-
 import BasicButton from '.';
+
+import {fireEvent, render} from '~helpers/testing';
 
 describe('<BasicButton />', () => {
   let component: any;

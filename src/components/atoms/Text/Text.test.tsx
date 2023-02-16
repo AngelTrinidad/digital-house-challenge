@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {render} from '@testing-library/react-native';
+import {render} from '~helpers/testing';
 
 import Text from '.';
 

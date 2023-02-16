@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {fireEvent, render} from '@testing-library/react-native';
+import {fireEvent, render} from '~helpers/testing';
 
 import Button from '.';
 
