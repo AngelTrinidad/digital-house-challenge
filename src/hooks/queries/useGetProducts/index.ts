@@ -15,7 +15,7 @@ interface UseGetProducts {
 export const useGetProducts = (): UseGetProducts => {
   const {data, isLoading, isError, refetch, isRefetching, isSuccess} = useQuery(
     Query.GetProducts,
-    () => getProducts(),
+    getProducts,
   );
 
   return {
