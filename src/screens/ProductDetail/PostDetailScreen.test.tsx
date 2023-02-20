@@ -3,7 +3,6 @@ import React from 'react';
 import ProductDetailScreen from '.';
 
 import {MockApiModuleUrl, mockApiOnGet, setupMockInterceptor} from '~api';
-import {formatNumber, getFullDate} from '~helpers';
 import {act, fireEvent, render, screen, waitFor} from '~helpers/testing';
 import {mockGoBack, product, screenNavigationProps} from '~mocks';
 
@@ -33,13 +32,9 @@ describe('<ProductDetailScreen />', () => {
       expect(screen.getByText(product.product)).toBeDefined(),
     );
 
-    expect(
-      screen.getByText(`Comprado el ${getFullDate(product.createdAt)}`),
-    ).toBeDefined();
+    expect(screen.getByText('Comprado el 9 de Diciembre, 2022')).toBeDefined();
 
-    expect(
-      screen.getByText(`${formatNumber(product.points)} puntos`),
-    ).toBeDefined();
+    expect(screen.getByText(`20,000 puntos`)).toBeDefined();
   });
 
   it('should call "goBack" callback when press button', async () => {

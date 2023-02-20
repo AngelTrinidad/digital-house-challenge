@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> should has same snapshot 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#334FFA"
+  size="large"
+/>
+`;

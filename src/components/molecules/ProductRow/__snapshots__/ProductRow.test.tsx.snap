@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductRow /> should has the same snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "white",
+      "flexDirection": "row",
+      "gap": 13.714285714285715,
+      "minHeight": 64,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://loremflickr.com/640/480/transport",
+      }
+    }
+    style={
+      {
+        "borderRadius": 10,
+        "height": 62.857142857142854,
+        "width": 62.857142857142854,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={2}
+      style={
+        {
+          "color": "black",
+          "fontFamily": "Metropolis Bold",
+          "fontSize": 17.2,
+          "fontWeight": "800",
+        }
+      }
+    >
+      Handmade Metal Shoes
+    </Text>
+    <Text
+      style={
+        {
+          "color": "black",
+          "fontFamily": "Metropolis",
+          "fontSize": 14.742857142857144,
+          "fontWeight": "400",
+          "marginTop": 9.142857142857142,
+        }
+      }
+    >
+      9 de Diciembre, 2022
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "flex-end",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#00B833",
+          "fontFamily": "Metropolis Bold",
+          "fontSize": 19.65714285714286,
+          "fontWeight": "800",
+        }
+      }
+    >
+      +
+    </Text>
+    <Text
+      adjustsFontSizeToFit={true}
+      style={
+        {
+          "color": "black",
+          "fontFamily": "Metropolis Bold",
+          "fontSize": 19.65714285714286,
+          "fontWeight": "800",
+        }
+      }
+    >
+      20,000
+    </Text>
+  </View>
+  <Text
+    style={
+      {
+        "color": "black",
+        "fontFamily": "Metropolis Bold",
+        "fontSize": 19.65714285714286,
+        "fontWeight": "800",
+      }
+    }
+  >
+    &gt;
+  </Text>
+</View>
+`;

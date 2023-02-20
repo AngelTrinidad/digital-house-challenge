@@ -44,3 +44,5 @@ jest.mock('react-native-safe-area-context', () => {
     useSafeAreaFrame: jest.fn(() => ({x: 0, y: 0, width: 390, height: 844})),
   };
 });
+
+jest.useFakeTimers();

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AsyncContent /> should has same snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+  testID="loading-content"
+>
+  <ActivityIndicator
+    animating={true}
+    color="#334FFA"
+    size="large"
+  />
+</View>
+`;

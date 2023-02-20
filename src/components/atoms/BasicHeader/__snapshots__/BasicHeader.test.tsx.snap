@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BasicHeader /> should has same snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "paddingHorizontal": 22.857142857142858,
+        "paddingVertical": 27.42857142857143,
+      },
+      {
+        "backgroundColor": "#CFD6FF",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text>
+    Hello
+  </Text>
+</View>
+`;

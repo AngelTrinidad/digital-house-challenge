@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> should has same snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 20,
+        "elevation": 11,
+        "shadowColor": "black",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+      },
+      {
+        "backgroundColor": "#334FFA",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text>
+    Hello
+  </Text>
+</View>
+`;
