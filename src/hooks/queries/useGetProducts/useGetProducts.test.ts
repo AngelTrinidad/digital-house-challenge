@@ -5,7 +5,7 @@ import {QueryClientProvider} from '~config/queryClient';
 import {renderHook, waitFor} from '~helpers/testing';
 import {product} from '~mocks';
 
-describe('Api Custom Hooks', () => {
+describe('useGetProducts', () => {
   beforeAll(() => {
     const interceptor = setupMockInterceptor();
 
