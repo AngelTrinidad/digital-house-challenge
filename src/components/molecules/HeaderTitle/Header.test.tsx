@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Typography from '.';
+import Header from '.';
 
 import {render} from '~helpers/testing';
 
-describe('<Typography />', () => {
+describe('<Header />', () => {
   let component: any;
 
   beforeEach(() => {
-    component = render(<Typography>Hello</Typography>);
+    component = render(<Header title="Hello" />);
   });
 
   it('should renders correctly', () => {

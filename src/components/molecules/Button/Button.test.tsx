@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {fireEvent, render} from '~helpers/testing';
-
 import Button from '.';
+
+import {fireEvent, render} from '~helpers/testing';
 
 describe('<Button />', () => {
   let component: any;

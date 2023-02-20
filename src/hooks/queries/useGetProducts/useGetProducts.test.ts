@@ -1,9 +1,8 @@
-import {renderHook, waitFor} from '~helpers/testing';
-
 import {useGetProducts} from '.';
 
 import {MockApiModuleUrl, mockApiOnGet, setupMockInterceptor} from '~api';
 import {QueryClientProvider} from '~config/queryClient';
+import {renderHook, waitFor} from '~helpers/testing';
 import {product} from '~mocks';
 
 describe('Api Custom Hooks', () => {

@@ -3,7 +3,6 @@ import React from 'react';
 import ProductListScreen from '.';
 
 import {MockApiModuleUrl, mockApiOnGet, setupMockInterceptor} from '~api';
-import {formatNumber, getCurrentPoints} from '~helpers';
 import {act, fireEvent, render, screen, waitFor} from '~helpers/testing';
 import {
   mockNavigate,
@@ -29,9 +28,7 @@ describe('<ProductListScreen />', () => {
       expect(screen.getByText(product.product)).toBeDefined(),
     );
 
-    expect(screen.getByTestId('current-points').children[0]).toBe(
-      formatNumber(getCurrentPoints([product, redemptionProduct])),
-    );
+    expect(screen.getByTestId('current-points').children[0]).toBe('5,000');
   });
 
   it('should show the product list', async () => {

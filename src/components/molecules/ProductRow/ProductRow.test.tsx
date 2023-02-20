@@ -1,14 +1,15 @@
 import React from 'react';
 
-import Typography from '.';
+import ProductRow from '.';
 
 import {render} from '~helpers/testing';
+import {product} from '~mocks';
 
-describe('<Typography />', () => {
+describe('<ProductRow />', () => {
   let component: any;
 
   beforeEach(() => {
-    component = render(<Typography>Hello</Typography>);
+    component = render(<ProductRow data={product} />);
   });
 
   it('should renders correctly', () => {

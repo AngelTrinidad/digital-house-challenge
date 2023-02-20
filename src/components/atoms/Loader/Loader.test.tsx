@@ -1,21 +1,21 @@
 import React from 'react';
 
-import Typography from '.';
+import Loader from '.';
 
 import {render} from '~helpers/testing';
 
-describe('<Typography />', () => {
+describe('<Loader />', () => {
   let component: any;
 
   beforeEach(() => {
-    component = render(<Typography>Hello</Typography>);
+    component = render(<Loader isLoading />);
   });
 
-  it('should renders correctly', () => {
+  it('should render correctly', () => {
     expect(component).toBeDefined();
   });
 
-  it('should has the same snapshot', () => {
+  it('should has same snapshot', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

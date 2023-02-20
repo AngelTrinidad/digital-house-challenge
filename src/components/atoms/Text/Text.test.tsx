@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {render} from '~helpers/testing';
-
 import Text from '.';
 
 import {DEFAULT_FONT} from '~constants/styles';
+import {render} from '~helpers/testing';
 
 describe('<BasicButton />', () => {
   let component: any;

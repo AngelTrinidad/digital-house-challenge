@@ -1,26 +1,26 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-import BasicContainer from '.';
+import ViewFlex from '.';
 
 import {render} from '~helpers/testing';
 
-describe('<BasicContainer />', () => {
+describe('<ViewFlex />', () => {
   let component: any;
 
   beforeEach(() => {
     component = render(
-      <BasicContainer>
+      <ViewFlex>
         <Text>Hello</Text>
-      </BasicContainer>,
+      </ViewFlex>,
     );
   });
 
-  it('renders correctly', () => {
+  it('should render correctly', () => {
     expect(component).toBeDefined();
   });
 
-  it('has same snapshot', () => {
+  it('should has same snapshot', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

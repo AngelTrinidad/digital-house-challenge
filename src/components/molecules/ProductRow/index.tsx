@@ -4,9 +4,9 @@ import {Image, TextStyle, View} from 'react-native';
 import styles from './styles';
 
 import {Typography, ViewFlex} from '~components/atoms';
+import {useTheme} from '~config/themes';
 import {formatNumber, getFullDate} from '~helpers';
 import {Product} from '~interfaces';
-import {useTheme} from '~config/themes';
 
 interface Props {
   data: Product;

@@ -1,26 +1,26 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-import BasicContainer from '.';
+import Card from '.';
 
 import {render} from '~helpers/testing';
 
-describe('<BasicContainer />', () => {
+describe('<Card />', () => {
   let component: any;
 
   beforeEach(() => {
     component = render(
-      <BasicContainer>
+      <Card>
         <Text>Hello</Text>
-      </BasicContainer>,
+      </Card>,
     );
   });
 
-  it('renders correctly', () => {
+  it('should render correctly', () => {
     expect(component).toBeDefined();
   });
 
-  it('has same snapshot', () => {
+  it('should has same snapshot', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

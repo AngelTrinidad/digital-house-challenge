@@ -1,9 +1,9 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-import {render} from '~helpers/testing';
-
 import AsyncContent from '.';
+
+import {render} from '~helpers/testing';
 
 describe('<AsyncContent />', () => {
   let component: any;
@@ -22,6 +22,10 @@ describe('<AsyncContent />', () => {
 
   it('should renders correctly', () => {
     expect(component).toBeDefined();
+  });
+
+  it('should has same snapshot', () => {
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('should render correct feedback by props', () => {
